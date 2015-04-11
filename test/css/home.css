@@ -1,0 +1,228 @@
+﻿/*=================== G L O B A L   P R O P E R T I E S ===================*/
+*{
+	margin: 			0px;
+	padding: 			0px;
+	font-family: 		"Arial", sans-serif;
+}
+html,body{
+	width:				100%;
+	height:				100%;
+	margin:				0px auto;
+	padding:			0px;
+	overflow:			visible;
+	text-align: 		center;
+}
+ul{
+	list-style-type:	none;
+}
+
+/*=================== C O N T A I N E R S ===================*/
+#container1 {
+	position:			relative;
+	top:				0px;
+	left:				0px;
+	min-width:			750px;
+	min-height:			545px;
+	width:				58.75%;
+	height:				100%;
+	margin: 			0px auto;
+	text-align:			left;
+}
+#container2{
+	position:			relative;
+	top:				-100%;
+	left:				0px;
+	min-width:			760px;
+	min-height:			545px;
+	width:				95%;
+	height:				100%;
+	margin: 			0px auto;
+	text-align:			left;
+	z-index: 			-1;
+}
+
+/*=================== H  E  A  D  E  R ===================*/
+#header {
+	position:			absolute;
+	top:				0px;
+	width: 				100%;
+	height:				76px;
+	background-color:	rgba(121, 121, 121, 0.5);
+}
+img.topLogo{
+	position:			absolute;
+	margin:				12px auto auto 13px;
+}
+p.login{
+	position:			absolute;
+	margin:				23px 12px;
+	right:				0px;
+	text-align:			right;
+	font-weight: 		bold;
+	font-size:			14px;
+}
+#header a:link, #header a:visited{
+	color:				rgba(0, 0, 0, 0.75);
+}
+#header a:hover, #header a:active{
+	color:				rgba(0, 0, 0, 0.5);
+}
+
+/*=================== M E N U ===================*/
+#menu {
+	position:			absolute;
+	top:				58.66%;
+	width:				100%;
+	height:				80px;
+	text-align:			right;
+	font-size:			22px;
+	z-index: 			1;
+}
+
+/*////////NAVIGATION////////*/
+ul#menuNav li{ 
+	position:			relative;
+	width:				33.245%;
+	height:				58px;
+	float:				left;
+	text-align:			center;
+	background-color:	rgba(255, 255, 255, 0.5);
+}
+ul#menuNav a{	
+	text-decoration:	none;
+	display:			block;
+	line-height:		58px;
+}
+#menuNav a:link, #menuNav a:visited{
+	color:				rgba(0, 0, 0, 0.75);
+}
+#menuNav a:hover, #menuNav a:active{
+	color:				rgba(0, 0, 0, 0.5);
+}
+li.menu1, li.menu2{
+	margin-right: 		1px;
+}
+/*////////ARROWS////////*/
+ul#menuArrows li{
+	position:			relative;
+	width:				33.245%;
+	height:				22px;
+	float:				left;
+	text-align:			center;
+	background-color:	rgba(100, 100, 100, 0.5);
+}
+ul#menuArrows a{
+	line-height:		22px;
+}
+li.menuArrow1, li.menuArrow2{
+	margin-right: 		1px;
+}
+
+/*=================== S U B M E N U ===================*/
+ul#menuNav li ul.subMenu{
+	display:			none;
+	position:			absolute;
+	bottom:				58px;
+}
+ul#menuNav li:hover ul.subMenu{
+	display:			block;
+}
+ul#menuNav ul.subMenu li{
+	width:				100%;
+	height:				38px;
+	font-size:			14px;
+	outline:			1px solid rgba(255, 255, 255, 0.2);
+	background-color:	rgba(0, 0, 0, 0.6);
+}
+ul#menuNav ul.subMenu li:hover{
+	background-color:	rgba(0, 0, 0, 0.8);
+}
+ul#menuNav ul.subMenu li.sub11{
+	height:				60px;
+}
+ul#menuNav ul.subMenu a{
+	color:				rgba(255, 255, 255, 1);
+}
+ul#menuNav ul.subMenu a{
+	line-height:		38px;
+}
+
+/*=================== F O O T E R ===================*/
+#footer{
+	position:			absolute;
+	top:				73.77%;
+	height:				14px;
+	margin: 			0px auto;
+	transform:			translateY(10px);
+	font-size:			12px;
+}
+.search {
+	width:				137px;
+	height:				15px;
+	border-radius:		2px;
+	padding:			0px 0px 0px 3px;
+	border:				1px solid rgba(0, 0, 0, 0.5);
+	background: 		url('../img/search.png') no-repeat 124px 2px;
+	background-color:	rgba(255, 255, 255, 1);
+}
+ul#footerMenu li{
+	float:				left;
+	height:				14px;
+}
+ul#footerMenu a{
+	text-decoration:	none;
+	display:			block;
+	line-height:		14px;
+}
+li.foot1{
+	position:			relative;
+	top:				-1px;
+	padding-right:		21px;
+}
+li.foot2, li.foot3, li.foot4{
+	margin-right: 		21px;
+	padding-left:		21px;
+	border-left:		2px solid rgba(0, 0, 0, 0.25);
+}
+#footerMenu a:link, #footerMenu a:visited{
+	color:				rgba(0, 0, 0, 1);
+}
+#footerMenu a:hover, #footerMenu a:active{
+	color:				rgba(0, 0, 0, 0.5);
+}
+#footerBackground {
+	position:			absolute;
+	top:				73.77%;
+	width:				100%;
+	height:				30px;
+	margin: 			0px auto;
+	border-top: 		2px solid rgba(255, 255, 255, 0.5);
+	background-color:	rgba(255, 255, 255, 0.10);
+	border-bottom: 		2px solid rgba(255, 255, 255, 0.5);
+}
+
+/*=================== C O P Y R I G H T ===================*/
+#copyright {
+	position:			absolute;
+	bottom:				10px;
+	opacity:			0.5;
+}
+p.copyright{
+	font-family: 		"Arial", sans-serif;
+	font-size:			9px;
+	color:				#FFFFFF;
+}
+
+/*=================== W A L L P A P E R ===================*/
+#background {
+	z-index: 			-2;
+	position: 			absolute;
+	top:				0px;
+	left:				0px;
+	height:				100%;
+	width:				100%;   
+	background-image:	url('../img/boat.jpg');
+	background-repeat: 	no-repeat;
+	background-size:	cover;
+	background-position:center center;
+}

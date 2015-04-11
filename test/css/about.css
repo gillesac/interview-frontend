@@ -1,0 +1,192 @@
+﻿/*== G  L  O  B  A  L     P  R  O  P  E  R  T  I  E  S ==*/
+*{
+	margin: 			0px;
+	padding: 			0px;
+	font-family: 		"Arial", sans-serif;
+	font-size:			1em;
+	box-sizing: 		border-box;
+}
+html,body{
+	width:				100%;
+	height:				100%;
+	margin:				0px auto;
+	padding:			0px;
+	overflow:			visible;
+	text-align: 		center;
+}
+ul{
+	list-style-type:	none;
+}
+
+/*============ C  O  N  T  A  I  N  E  R  S =============*/
+#container1 {
+	position:			relative;
+	top:				0px;
+	left:				0px;
+	min-width:			1014px;
+	min-height:			545px;
+	width:				58.75%;
+	height:				100%;
+	margin: 			0px auto;
+	text-align:			left;
+}
+
+/*================== H  E  A  D  E  R ===================*/
+#header {
+	position:			absolute;
+	top:				0px;
+	width: 				100%;
+	height:				76px;
+	background-color:	rgba(121, 121, 121, 0.5);
+}
+img.topLogo{
+	position:			absolute;
+	margin:				12px auto auto 13px;
+}
+p.login{
+	position:			absolute;
+	margin:				0.8em 0.8em;
+	right:				0px;
+	text-align:			right;
+	font-size:			0.8em;
+	font-weight: 		bold;
+}
+#header a:link, #header a:visited{
+	color:				rgba(0, 0, 0, 0.75);
+}
+#header a:hover, #header a:active{
+	color:				rgba(0, 0, 0, 0.5);
+}
+
+/*================== B  A  N  N  E  R ===================*/
+#banner {
+	position:			absolute;
+	top:				83px;
+	width: 				100%;
+	height:				248px;
+	background-image:	url('../img/banner-boat.jpg');
+	background-repeat: 	no-repeat;
+	background-size:	cover;
+	background-position:center center;
+}
+
+/*========== B  R  E  A  D  C  R  U  M  B  S ============*/
+#breadcrumbs {
+	position:			absolute;
+	top:				337px;
+	right:				5px;
+	width: 				100%;
+	height:				14px;
+	color:				#000000;
+	text-align:			right;
+}
+
+/*=============== A  R  T  I  C  L  E  S ================*/
+#articles {
+	position:			absolute;
+	top:				482px;
+	left:				286px;
+	width:				639px;
+	height:				calc(100% - 482px - 70px - 5px);
+	color:				#000000;
+	text-align:			left;
+	font-size:			0.95em;
+	overflow-y:			auto;
+}
+
+#articleTitle{
+	position:			absolute;
+	top:				calc(358px + 49px);
+	left:				210px;
+	width:				calc(100% - 210px);
+	height:				49px;
+	color:				#000000;
+	text-align:			left;
+	font-weight:		bold;
+	line-height:		49px;
+	border-bottom:		1px solid rgba(204, 204, 204, 1)
+}
+
+/*==================== M  E  N  U =======================*/
+#menu {
+	position:			absolute;
+	top:				358px;
+	font-size:			1.2em;
+	z-index: 			1;
+}
+
+/*////////NAVIGATION////////*/
+#menuNav li{ 
+	position:			relative;
+	width:				184px;
+	height:				49px;
+}
+#menuNav a{	
+	text-decoration:	none;
+	display:			block;
+	line-height:		49px;
+	padding-left:		50px;
+	text-align:			left;
+}
+#menuNav a:link, #menuNav a:visited{
+	color:				rgba(0, 0, 0, 1);
+	border-left:		12px solid rgba(229, 229, 229, 1);
+	background-color:	rgba(255, 255, 255, 1);
+}
+#menuNav a:hover{
+	color:				rgba(183, 24, 45, 1);
+}
+
+/*================== F  O  O  T  E  R ===================*/
+#footer{
+	position:			absolute;
+	bottom:				48px;
+	height:				14px;
+	margin: 			0px auto;
+	z-index: 			1;
+}
+ul#footerMenu li{
+	float:				left;
+	height:				14px;
+}
+ul#footerMenu a{
+	text-decoration:	none;
+	display:			block;
+	line-height:		14px;
+}
+li.foot1{
+	padding-left:		125px;
+	padding-right:		42px;
+}
+li.foot2, li.foot3{
+	margin-right: 		42px
+}
+#footerMenu a:link, #footerMenu a:visited{
+	color:				rgba(0, 0, 0, 1);
+}
+#footerMenu a:hover, #footerMenu a:active{
+	color:				rgba(0, 0, 0, 0.5);
+}
+#footerBackground {
+	position:			absolute;
+	bottom:				40px;
+	width:				calc(100% - 60px);
+	left:				30px;
+	height:				30px;
+	margin: 			0px auto;
+	border-top: 		2px solid rgba(0, 0, 0, 0.5);
+	background-color:	rgba(255, 255, 255, 0.0);
+	border-bottom: 		2px solid rgba(0, 0, 0, 0.5);
+}
+
+/*============= W  A  L  L  P  A  P  E  R ==============*/
+#background {
+	z-index: 			-2;
+	position: 			absolute;
+	top:				0px;
+	left:				0px;
+	width:				100%;
+	height:				100%;
+	background-color:	rgba(240, 240, 240, 1);
+	background-repeat: 	repeat;
+}
